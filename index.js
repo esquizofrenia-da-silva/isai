@@ -281,10 +281,22 @@ const book1 = new CreaterBook("The Power of Habits","Charles Duhigg",371, 25.90)
 book1.color = "Green"
 console.log(book1)
 
-//Garbage Collection //objetos gasta memoria, se o objeto nao estiver sendo usado ele o "apaga", deixando em desuso, liberando memoria
+//Garbage Collection >> objetos gasta memoria, se o objeto nao estiver sendo usado ele o "apaga", deixando em desuso, liberando memoria
 
 
 //Built-in Objects
 
+//biblioteca nativa math
 console.log(Math.max(2,2455,34, 4543, 56, 430, 223)) //max vai retornar o valor maximo
 console.log(Math.min(2,2455,34, 4543, 56, 430, 223)) // min vai retornar o valor minimo
+console.log(Math.round(3.5)) //round vai arredondar para o valor mais proximo
+console.log(Math.PI) //puxar o pi
+console.log(Math.random(55)) //retorna um numero flutuante
+
+//Strings
+
+let message = "Hey, whats up?"
+console.log(message.startsWith("Hey")) //ver se o valor de message começa com Hey
+console.log(message.endsWith("up?")) // termina com
+console.log(message.includes(",")) // se tem tal caracter n string
+console.log(message.length) //quantos caracters
