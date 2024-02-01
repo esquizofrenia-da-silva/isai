@@ -300,3 +300,12 @@ console.log(message.startsWith("Hey")) //ver se o valor de message começa com H
 console.log(message.endsWith("up?")) // termina com
 console.log(message.includes(",")) // se tem tal caracter n string
 console.log(message.length) //quantos caracters
+
+
+let name = "Joe"
+
+const email = "Hi " + name + ",\nThe meet is scheduled for 10:00 AM!" //o \n é a quebra de linha, se botar umespaço depois, gtbm sai no texto
+console.log(email)
+const email1 =`Hi ${name},
+The meet is scheduled for 10:00 AM!` //assim é a atual forma de quebrar a linha e botar variavel no texto
+console.log(email1)
