@@ -211,3 +211,56 @@ switch (airPortName) {
         console.log('Nao encontrado')
         break
 }
+
+
+
+//pegar liçao
+
+
+
+//OPP Object Oriented Programming - programaçao orientada a objetos
+
+// const book = {
+//     title: 'Atomic Heart',
+//     author: 'James Clear',
+//     pages: 320,
+//     price: 29.99,
+//     chapters: {
+//         chapter1: "The Fundamental of Atomic Habits", //Consigo botar atributos, dentro de atributos
+//         chapter2: "The surprising",
+//         chapter3: "...",
+
+//         printbook: function(){ //Podemos botar funções dentro de objetos
+
+//             console.log("Print book...")
+
+//         }
+//     }
+// }
+
+//console.log(book) //para pedir o printbook (funçao acima)
+
+
+//Factory Function (factory = fabricA)
+
+function CreateBook(title, author, pages, price){
+ 
+    const book = {
+    title: title,
+    author: author,
+    pages: pages,
+    price: price,
+
+        
+    }
+    return book
+}
+
+const book1 = new CreateBook("Atomic Hearts","James Clear",320,29.99) //bote o CreateBook para dizer que a variavel pertence a funçao
+const book2 = new CreateBook("The Power of Habits","Charles Duhigg",371, 25.90)
+book1.color = "Red" //botando mais um atributo
+book2.color = "Blue"
+console.log(book1, book2)
+
+
+//Constructor Function
