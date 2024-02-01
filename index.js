@@ -243,24 +243,48 @@ switch (airPortName) {
 
 //Factory Function (factory = fabricA)
 
-function CreateBook(title, author, pages, price){
+// function CreateBook(title, author, pages, price){
  
-    const book = {
-    title: title,
-    author: author,
-    pages: pages,
-    price: price,
+//     const book = {
+//     title: title,
+//     author: author,
+//     pages: pages,
+//     price: price,
 
         
-    }
-    return book
-}
+//     }
+//     return book
+// }
 
-const book1 = new CreateBook("Atomic Hearts","James Clear",320,29.99) //bote o CreateBook para dizer que a variavel pertence a funçao
-const book2 = new CreateBook("The Power of Habits","Charles Duhigg",371, 25.90)
-book1.color = "Red" //botando mais um atributo
-book2.color = "Blue"
-console.log(book1, book2)
+// const book1 = new CreateBook("Atomic Hearts","James Clear",320,29.99) //bote o CreateBook para dizer que a variavel pertence a funçao
+// const book2 = new CreateBook("The Power of Habits","Charles Duhigg",371, 25.90)
+// book1.color = "Red" //botando mais um atributo
+// book2.color = "Blue"
+// console.log(book1, book2)
 
 
 //Constructor Function
+
+//fuçoes sao criada com duas letras maiusculas tipo CreaterBook, as variaveis sao apenas uma, createrBook
+
+// construtor nao precisa de return
+function CreaterBook (title, author, pages, price) {
+
+    this.title = title, //este titulo = esse titulo
+    this.author = author,
+    this.pages = pages,
+    this.price = price
+
+}
+
+const book1 = new CreaterBook("The Power of Habits","Charles Duhigg",371, 25.90)
+book1.color = "Green"
+console.log(book1)
+
+//Garbage Collection //objetos gasta memoria, se o objeto nao estiver sendo usado ele o "apaga", deixando em desuso, liberando memoria
+
+
+//Built-in Objects
+
+console.log(Math.max(2,2455,34, 4543, 56, 430, 223)) //max vai retornar o valor maximo
+console.log(Math.min(2,2455,34, 4543, 56, 430, 223)) // min vai retornar o valor minimo
