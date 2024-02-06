@@ -216,7 +216,40 @@ switch (airPortName) {
 
 //pegar liçao
 
+//for loop
 
+for(i=1; i<=5;i++) {
+    console.log("O numero é",i)
+}
+
+let myNumber =20
+
+for (i=1; i<=myNumber; i++) {
+    console.log('O numero é', i)
+}
+
+//While loop
+
+let index = 1
+while(index<=100) {
+    console.log("O numero é", index)
+    index++
+}
+
+//Do While Loop
+
+let index2 =1
+do{
+    console.log('Numero',index2)
+}
+
+//For of Loop
+
+const friends = ["Joao","Matheus", "Diego","Larissa","Luana"]
+
+for(let friend of friends){
+    console.log(friend)
+}
 
 //OPP Object Oriented Programming - programaçao orientada a objetos
 
@@ -309,3 +342,37 @@ console.log(email)
 const email1 =`Hi ${name},
 The meet is scheduled for 10:00 AM!` //assim é a atual forma de quebrar a linha e botar variavel no texto
 console.log(email1)
+
+//Entendendo as Arrays a fundo
+
+const random = ['Marcos', 1, true]
+console.log(random) //random é apenas o nome da variavel
+
+const num = [7,8,9]
+num.push(10)// empurrar, ele bota o valor dentro da array(lista), ficando no final
+console.log(num)
+num.unshift(1,2,3)// vai adicionar no começo, ja que o push adiciona no final
+console.log(num)
+
+num.splice(3,0,4,5,6)//a partir da casa 3 (primeiro caractere no splice), ele apagrá 0 (segundo caractere no splice) caracteres, e irá adicionar os numeros 4,5,6 (ultimos caracteres)
+console.log(num)
+
+console.log(num.indexOf(8))//ele diz a posiçao em que está o numero que voce bota, se botei 8, estará como setimo caractere, vale lembrar que ele conta o zero
+console.log(num.includes(21))// vai procurar se tal numerovai estar na array
+
+//Arrays de referência
+
+const movies = [
+
+    {id:1, title: 'The Matrix', ratting: '4.5'},
+    {id:2, title: 'The GoodFather', rating: '5'}
+]
+
+console.log(movies.find(function(movie){ //voce usa a funcao .find dentro do .log, e dentro do fund criamos a funcao 'movie'
+    return movie.title === 'The GoodFather'// a funcao retorna o filme que é igual a tal string
+//movie.title, porque ta procurando o title da movies, mas dentro da funcao movie
+} ))
+
+//Arrow Functions
+
+console.log(movies.find(movie=>movie.title === 'The Matrix'))//Fazendo a mesma coisa que em cima, mas de forma simplificada
